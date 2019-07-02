@@ -416,22 +416,6 @@
       <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
       <Name>CN88.BetList.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CN88\Products\CN88.BetList.Keno\CN88.BetList.Keno.csproj">
-      <Project>{b415a517-0173-484d-9029-f5dfdadd2007}</Project>
-      <Name>CN88.BetList.Keno</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CN88\Products\CN88.BetList.Lottery\CN88.BetList.Lottery.csproj">
-      <Project>{492ee3d3-bd35-42fa-aece-53f310149abf}</Project>
-      <Name>CN88.BetList.Lottery</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CN88\Products\CN88.BetList.NumberGame\CN88.BetList.NumberGame.csproj">
-      <Project>{685ac355-43a7-4281-8121-f656c5298260}</Project>
-      <Name>CN88.BetList.NumberGame</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CN88\Products\CN88.BetList.VirtualSports\CN88.BetList.VirtualSports.csproj">
-      <Project>{2148be84-58f8-4693-a02d-e9f87010d571}</Project>
-      <Name>CN88.BetList.VirtualSports</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Fanex.BetList.Example.Data\Fanex.BetList.Example.Data.csproj">
       <Project>{CF75E712-CD28-42EF-A9F7-5DDE2B4E7BA8}</Project>
       <Name>Fanex.BetList.Example.Data</Name>

@@ -70,16 +70,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CN88\CN88.BetList.Core\CN88.BetList.Core.csproj">
-      <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
-      <Name>CN88.BetList.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CN88\Products\CN88.BetList.Sportsbook\CN88.BetList.Sportsbook.csproj">
-      <Project>{9df03ada-000e-4355-8625-2ba47b96fd64}</Project>
-      <Name>CN88.BetList.Sportsbook</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Fanex.BetList.Example.Extension.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -90,6 +80,12 @@
     <Analyzer Include="..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\Google.Protobuf.dll" />
     <Analyzer Include="..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.CSharp.dll" />
     <Analyzer Include="..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CN88.BetList.Core\CN88.BetList.Core.csproj">
+      <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
+      <Name>CN88.BetList.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
