@@ -1,0 +1,20 @@
+﻿namespace CN88.BetList.Core.Builders.ChoiceBuilders
+{
+    using Fanex.BetList.Core.App_GlobalResources;
+    using Fanex.BetList.Core.Constants;
+    using Fanex.BetList.Core.Entities;
+
+    /// <summary>
+    /// Bet Type: Odd/Even.
+    /// </summary>
+    public class ChoiceCN2 : BaseChoiceCN88
+    {
+        protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
+        {
+            Template.BetChoice.ChoiceName.choiceName =
+                ticket.BetTeam == BetTeamValue.H
+                ? CoreBetList.odd
+                : CoreBetList.even;
+        }
+    }
+}

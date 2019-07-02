@@ -1,0 +1,44 @@
+﻿namespace Fanex.BetList.Core.UnitTest.Builder.ChoiceBuilder
+{
+    using Common.Enums;
+    using Core.Builder.ChoiceBuilder;
+    using Entities;
+    using NSubstitute;
+    using NUnit.Framework;
+
+    /// <summary>
+    /// Unit test for Choice1316 class.
+    /// </summary>
+    [TestFixture]
+    public class Choice1316Test
+    {
+        private IChoice _choice;
+        private ITicket _ticket;
+        private ITicketHelper _ticketHelper;
+
+        [SetUp]
+        public void Setup()
+        {
+            _choice = new Choice1316();
+            _ticket = Substitute.For<ITicket>();
+            _ticket.BetTypeId = BetTypes.SetXGameHandicap;
+            _ticketHelper = Substitute.For<ITicketHelper>();
+        }
+
+        /// <summary>
+        /// The value of Template.BetType.betTypeName is always the parent bet type name.
+        /// </summary>
+        [Test]
+        public void BuildBetType_Always_SetBetTypeNameIsParentBetTypeName()
+        {
+            // Arrange
+            _ticketHelper.GetBetTypeNameById(Arg.Any<object>(), Arg.Any<object>(), Arg.Any<object>(), Arg.Any<object>()).Returns("Bet type name");
+
+            // Act
+            _choice.Render(_ticket, _ticketHelper, null, Arg.Any<bool>());
+
+            // Assert
+            Assert.AreEqual("Bet type name", _choice.Template.BetType.betTypeName);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="Stylesheet" href="~/Content/CoreBetList.css" />
+    <link href="~/Content/Allbet.css" rel="stylesheet" />
+    <link href="~/Content/Microgaming.css" rel="stylesheet" />
+    <link href="~/Content/AGCasino.css" rel="stylesheet" />
+    <link href="~/Content/CockFighting.css" rel="stylesheet" />
+    <link href="~/Content/Lucky3.css" rel="stylesheet" />
+    <link href="~/Content/bullfighting.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link href="~/Scripts/chosen_v1.8.7/chosen.min.css" rel="stylesheet" />
+    <link href="~/Content/CN88/CoreBetListCN88.css" rel="stylesheet" />
+    @RenderSection("head", false)
+</head>
+<body>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="~/BetList/All">Core BetList CN88</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="~/BetListCN88/Sportsbook">Sportsbook</a></li>
+            <li><a href="~/BetListCN88/NonSports">Non-sports</a></li>
+        </ul>
+    </div>
+    @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/chosen_v1.8.7/chosen.jquery.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DF03ADA-000E-4355-8625-2BA47B96FD64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CN88.BetList.Core</RootNamespace>
+    <AssemblyName>CN88.BetList.Sportsbook</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>CN88.BetList.Sportsbook.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>CN88.BetList.Sportsbook.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CN88.BetList.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CN88.BetList.Core.1.0.0\lib\net461\CN88.BetList.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Fanex.BetList.Core.2.79.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Core, Version=2.79.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Fanex.BetList.Core.2.79.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NPOI.2.0.6\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NPOI.2.0.6\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TplCore, Version=1.0.4854.17253, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\TplCore.1.0.4854.17254\lib\net40\TplCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppResources\CN88SportsbookResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CN88SportsbookResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN154.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN29.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN405.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN407.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN121.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN122.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN123.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN126.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN127.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN128.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN129.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN13.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN130.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN131.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN132.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN136.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN137.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN138.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN139.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN14.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN143.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN15.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN156.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN16.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN18.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN22.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN221.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN223.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN24.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN26.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN28.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN401.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN406.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN407.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN408.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN412.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN416.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN415.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN417.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN418.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN419.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN422.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN424.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN425.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN426.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN427.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN428.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN429.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN430.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN431.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN442.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN445.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN448.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN449.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN450.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN451.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN452.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN454.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN455.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN458.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN459.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN5.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN6.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN601.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN602.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN603.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN608.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN610.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN611.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN614.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN29.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN10.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN3.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN4.cs" />
+    <Compile Include="Constants\SportsbookBetTypeIdConstant.cs" />
+    <Compile Include="Constants\SportsbookCommonConstant.cs" />
+    <Compile Include="Mappers\BetInfoCN88Mapper.cs" />
+    <Compile Include="Mappers\ChoiceCN88Mapper.cs" />
+    <Compile Include="Mappers\ParentChildCN88Mapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CN88.BetList.Sportsbook.ruleset" />
+    <None Include="packages.config" />
+    <None Include="_CreateNewNuGetPackage\Config.ps1" />
+    <None Include="_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage\DoNotModify\New-NuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage\DoNotModify\UploadNuGetPackage.ps1" />
+    <None Include="_CreateNewNuGetPackage\RunMeToUploadNuGetPackage.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\Google.Protobuf.dll" />
+    <Analyzer Include="..\..\..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.CSharp.dll" />
+    <Analyzer Include="..\..\..\packages\SonarAnalyzer.CSharp.6.7.1.4347\analyzers\SonarAnalyzer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_CreateNewNuGetPackage\DoNotModify\NuGet.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppResources\CN88SportsbookResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CN88SportsbookResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppResources\CN88SportsbookResources.zh-Hans.resx" />
+    <EmbeddedResource Include="AppResources\CN88SportsbookResources.zh-TW.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM Create a NuGet package for this project and place the .nupkg file in the project's output directory.
+REM If you see this in Visual Studio's Error List window, check the Output window's Build tab for the actual error.
+ECHO Creating NuGet package in Post-Build event...
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(ProjectDir)_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1' -ProjectFilePath '$(ProjectPath)' -OutputDirectory '$(TargetDir)' -BuildConfiguration '$(ConfigurationName)' -BuildPlatform '$(PlatformName)'"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
