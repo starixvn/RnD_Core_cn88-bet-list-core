@@ -40,6 +40,12 @@
     <SonarQubeExclude>true</SonarQubeExclude>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.79.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Core, Version=2.79.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.79.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\packages\NPOI.2.0.6\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -53,6 +59,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TplCore, Version=1.0.4694.29951, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TplCore.1.0.4694.29951\lib\net40\TplCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BetListExcelBuilderExt\BetListCN88ExcelBuilderExt.cs" />
@@ -68,10 +77,6 @@
     <ProjectReference Include="..\CN88\Products\CN88.BetList.Sportsbook\CN88.BetList.Sportsbook.csproj">
       <Project>{9df03ada-000e-4355-8625-2ba47b96fd64}</Project>
       <Name>CN88.BetList.Sportsbook</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Core\Fanex.BetList.Core.csproj">
-      <Project>{B0838D04-2306-4362-AF22-9FCD0BE6F8E7}</Project>
-      <Name>Fanex.BetList.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

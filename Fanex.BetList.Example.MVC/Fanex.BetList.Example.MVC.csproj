@@ -69,8 +69,80 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Fanex.BetList.AGCasino, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.AGCasino.1.0.0.5\lib\net40\Fanex.BetList.AGCasino.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Allbet, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Allbet.1.0.0.9\lib\net40\Fanex.BetList.Allbet.dll</HintPath>
+    </Reference>
     <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.2.79.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+      <HintPath>..\packages\Fanex.BetList.Core.2.86.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Bullfighting, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Bullfighting.1.2.0\lib\net40\Fanex.BetList.Bullfighting.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.CashOut, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.CashOut.1.0.0.7\lib\net40\Fanex.BetList.CashOut.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.CockFighting, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.CockFighting.1.0.0.5\lib\net40\Fanex.BetList.CockFighting.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.ColossusBets, Version=1.0.1.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.ColossusBets.1.0.1.8\lib\net40\Fanex.BetList.ColossusBets.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Core, Version=2.86.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.86.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Core.RemotingRef, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.RemotingRef.1.0.0\lib\net461\Fanex.BetList.Core.RemotingRef.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.ESports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.ESports.1.0.0\lib\net40\Fanex.BetList.ESports.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.GlobalGaming, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.GlobalGaming.1.0.0.7\lib\net40\Fanex.BetList.GlobalGaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.GoldDeluxe, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.GoldDeluxe.1.1.0\lib\net40\Fanex.BetList.GoldDeluxe.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Keno, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Keno.1.1.0\lib\net40\Fanex.BetList.Keno.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.KenoLottery, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.KenoLottery.1.1.0\lib\net40\Fanex.BetList.KenoLottery.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Lucky3, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Lucky3.1.1.0\lib\net40\Fanex.BetList.Lucky3.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.MetricGaming, Version=1.0.4.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.MetricGaming.1.0.4.5\lib\net40\Fanex.BetList.MetricGaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Microgaming, Version=2.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Microgaming.2.0.0.7\lib\net40\Fanex.BetList.Microgaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.MyanmarOdds, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.MyanmarOdds.1.0.1.4\lib\net40\Fanex.BetList.MyanmarOdds.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.NG2, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.NG2.1.0.3\lib\net40\Fanex.BetList.NG2.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.NumberGame, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.NumberGame.1.2.0\lib\net40\Fanex.BetList.NumberGame.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.PokerGames, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.PokerGames.1.1.1\lib\net40\Fanex.BetList.PokerGames.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.PP, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.PP.1.2.0\lib\net40\Fanex.BetList.PP.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.RnGCasino, Version=1.0.1.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.RnGCasino.1.0.1.6\lib\net40\Fanex.BetList.RnGCasino.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.VirtualSports, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.VirtualSports.1.4.0\lib\net40\Fanex.BetList.VirtualSports.dll</HintPath>
+    </Reference>
+    <Reference Include="Fanex.BetList.Voidbridge, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Voidbridge.1.1.0\lib\net40\Fanex.BetList.Voidbridge.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.RemotingRef, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.RemotingRef.1.3.0\lib\net461\Fanex.RemotingRef.dll</HintPath>
@@ -187,6 +259,7 @@
     <Compile Include="ViewModel\BetListData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Allbet.css" />
     <Content Include="CodeAnalysis\CodeAnalysisConfiguration.xml" />
     <Content Include="Content\AGCasino.css" />
     <Content Include="Content\Allbet.css" />
@@ -359,42 +432,6 @@
       <Project>{2148be84-58f8-4693-a02d-e9f87010d571}</Project>
       <Name>CN88.BetList.VirtualSports</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.AGCasino\Fanex.BetList.AGCasino.csproj">
-      <Project>{c18e1369-66c3-4a87-82bf-10e13e6cc2a0}</Project>
-      <Name>Fanex.BetList.AGCasino</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.Betlist.Allbet\Fanex.BetList.Allbet.csproj">
-      <Project>{ebf46368-f937-49df-b24d-bac01ed3a947}</Project>
-      <Name>Fanex.BetList.Allbet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Bullfighting\Fanex.BetList.Bullfighting.csproj">
-      <Project>{95198f80-e7f6-4b7b-b0b7-f2c11a5886af}</Project>
-      <Name>Fanex.BetList.Bullfighting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.CashOut\Fanex.BetList.CashOut.csproj">
-      <Project>{eeb53cdf-8346-4f95-9997-b7bc052d1f18}</Project>
-      <Name>Fanex.BetList.CashOut</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.CockFighting\Fanex.BetList.CockFighting.csproj">
-      <Project>{5a3e7893-910a-48a7-9582-58a864068ca8}</Project>
-      <Name>Fanex.BetList.CockFighting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.ColossusBets\Fanex.BetList.ColossusBets.csproj">
-      <Project>{89b48c7f-9ea2-40cf-879c-5509555d3b1d}</Project>
-      <Name>Fanex.BetList.ColossusBets</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Core.RemotingRef\Fanex.BetList.Core.RemotingRef.csproj">
-      <Project>{0eadbd74-9c9f-4011-a669-034014865dc9}</Project>
-      <Name>Fanex.BetList.Core.RemotingRef</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Core\Fanex.BetList.Core.csproj">
-      <Project>{b0838d04-2306-4362-af22-9fcd0be6f8e7}</Project>
-      <Name>Fanex.BetList.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.ESports\Fanex.BetList.ESports.csproj">
-      <Project>{e888ddfc-d613-4b0f-bc95-1b0fe0e606d1}</Project>
-      <Name>Fanex.BetList.ESports</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Fanex.BetList.Example.Data\Fanex.BetList.Example.Data.csproj">
       <Project>{CF75E712-CD28-42EF-A9F7-5DDE2B4E7BA8}</Project>
       <Name>Fanex.BetList.Example.Data</Name>
@@ -402,62 +439,6 @@
     <ProjectReference Include="..\Fanex.BetList.Example.Extension\Fanex.BetList.Example.Extension.csproj">
       <Project>{C170087E-7A8F-4CBC-A0F7-F869DFFE48FD}</Project>
       <Name>Fanex.BetList.Example.Extension</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.GlobalGaming\Fanex.BetList.GlobalGaming.csproj">
-      <Project>{2b8a67cf-d4c8-47fd-a7f1-db3b9525e567}</Project>
-      <Name>Fanex.BetList.GlobalGaming</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.GoldDeluxe\Fanex.BetList.GoldDeluxe.csproj">
-      <Project>{9b786951-7d5c-42c4-a9df-ec558bc44593}</Project>
-      <Name>Fanex.BetList.GoldDeluxe</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.KenoLottery\Fanex.BetList.KenoLottery.csproj">
-      <Project>{ae7d0ff9-c449-4fa4-a399-267426354b7f}</Project>
-      <Name>Fanex.BetList.KenoLottery</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Keno\Fanex.BetList.Keno.csproj">
-      <Project>{0b1f8272-e921-4539-8d3a-bcfc10280f4e}</Project>
-      <Name>Fanex.BetList.Keno</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Lucky3\Fanex.BetList.Lucky3.csproj">
-      <Project>{9ce8fb6f-00d8-462c-a734-c0608a294ff7}</Project>
-      <Name>Fanex.BetList.Lucky3</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.MetricGaming\Fanex.BetList.MetricGaming.csproj">
-      <Project>{054031e6-3e06-47d9-b3d1-b8a8e164e504}</Project>
-      <Name>Fanex.BetList.MetricGaming</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.Microgaming\Fanex.BetList.Microgaming.csproj">
-      <Project>{fbfa63df-5a51-4fff-8535-ad0f5e723b64}</Project>
-      <Name>Fanex.BetList.Microgaming</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.MyanmarOdds\Fanex.BetList.MyanmarOdds.csproj">
-      <Project>{a757a8fc-9989-4945-8319-74a02a2e7d2d}</Project>
-      <Name>Fanex.BetList.MyanmarOdds</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.NumberGame\Fanex.BetList.NumberGame.csproj">
-      <Project>{b26ba5c4-a25c-4e28-b3fb-a585245d5e52}</Project>
-      <Name>Fanex.BetList.NumberGame</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.PokerGames\Fanex.BetList.PokerGames.csproj">
-      <Project>{d504aa63-e8d2-4819-a1da-f9451d4f0468}</Project>
-      <Name>Fanex.BetList.PokerGames</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.PP\Fanex.BetList.PP.csproj">
-      <Project>{502c6122-7b87-4a3c-9be2-782b411675cd}</Project>
-      <Name>Fanex.BetList.PP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.RnGCasino\Fanex.BetList.RnGCasino.csproj">
-      <Project>{9ea9fe4a-ac19-4ff5-908f-54a7831b41ee}</Project>
-      <Name>Fanex.BetList.RnGCasino</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.VirtualSports\Fanex.BetList.VirtualSports.csproj">
-      <Project>{f3dc05fd-883b-47f6-9f13-5506bf084cae}</Project>
-      <Name>Fanex.BetList.VirtualSports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Fanex.BetList.VoidBridge\Fanex.BetList.VoidBridge.csproj">
-      <Project>{0f87bc2a-0625-42b3-b695-3e6384e588db}</Project>
-      <Name>Fanex.BetList.VoidBridge</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
