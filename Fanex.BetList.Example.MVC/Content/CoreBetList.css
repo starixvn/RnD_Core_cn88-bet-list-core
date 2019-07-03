@@ -1,4 +1,4 @@
-a {
+﻿a {
     text-decoration: none;
 }
 
@@ -233,6 +233,22 @@ div.match + div.league + div.no-details {
         cursor: pointer
     }
 
-.cn88-bettype-name {
-    color: #0066CC;
+.table .cn88-bettype-name {
+    line-height: 20px;
+    color: #003399;
+    font-weight: bold;
+}
+
+.unit-stake, .bet-type {
+    color: #003399 !important;
+    font-weight: bold;
+}
+
+.bettype-description {
+    color: #003399;
+    font-weight: normal;
+}
+
+.cn88-bet-item {
+    width: 250px;
 }
