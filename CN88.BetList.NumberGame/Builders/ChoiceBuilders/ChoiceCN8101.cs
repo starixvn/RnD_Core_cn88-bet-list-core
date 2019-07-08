@@ -1,7 +1,7 @@
 ﻿namespace CN88.BetList.Core.Builders.ChoiceBuilders
 {
     using System.Collections.Generic;
-    using Fanex.BetList.Core.App_GlobalResources;
+    using CN88.BetList.Core.AppResources;
     using Fanex.BetList.Core.Constants;
     using Fanex.BetList.Core.Entities;
 
@@ -29,7 +29,7 @@
         {
             Template.MatchByTeamId = null;
 
-            var homeTeam = $"{CoreBetList.lblNo}{HtmlCharacters.NoneBreakingSpace}{ticket.MatchCode}";
+            var homeTeam = $"{CN88NumberGameLang.lblNo}.{HtmlCharacters.NoneBreakingSpace}{ticket.MatchCode}";
             Template.Match.homeTeam = homeTeam;
             Template.Match.awayTeam = string.Empty;
 

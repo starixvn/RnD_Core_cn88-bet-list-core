@@ -127,4 +127,7 @@
   <data name="next" xml:space="preserve">
     <value>Next</value>
   </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

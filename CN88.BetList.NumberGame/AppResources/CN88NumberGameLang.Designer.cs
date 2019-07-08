@@ -70,6 +70,15 @@ namespace CN88.BetList.Core.AppResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string lblNo {
+            get {
+                return ResourceManager.GetString("lblNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Over 37.5/Even.
         /// </summary>
         internal static string lblOverEven {
