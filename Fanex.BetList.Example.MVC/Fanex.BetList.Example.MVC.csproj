@@ -408,6 +408,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CN88.BetList.NumberGame\CN88.BetList.NumberGame.csproj">
+      <Project>{685ac355-43a7-4281-8121-f656c5298260}</Project>
+      <Name>CN88.BetList.NumberGame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CN88.BetList.VirtualSports\CN88.BetList.VirtualSports.csproj">
+      <Project>{2148be84-58f8-4693-a02d-e9f87010d571}</Project>
+      <Name>CN88.BetList.VirtualSports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CN88\CN88.BetList.Core\CN88.BetList.Core.csproj">
       <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
       <Name>CN88.BetList.Core</Name>

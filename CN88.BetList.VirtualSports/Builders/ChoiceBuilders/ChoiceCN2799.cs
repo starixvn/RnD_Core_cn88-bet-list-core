@@ -3,7 +3,6 @@
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
-    using CN88.BetList.Core.AppResources;
     using Fanex.BetList.Core.App_GlobalResources;
     using Fanex.BetList.Core.Entities;
     using Fanex.BetList.Core.Utils;
@@ -24,7 +23,9 @@
             Template.MixParlay.mixParlayTitle = CoreBetList.lblMixParlay;
 
             BuildOfferNamesBlock(ticket, ticketHelper);
-            BuildDetailLink(ticket, ticketHelper);
+
+            Template.MoreInfo.Visible = false;
+            Template.KickOffTime.Hide();
         }
 
         protected override void BuildOdds(ITicket ticket, List<ITicketData> ticketData)
@@ -65,45 +66,6 @@
             Template.MixParlay.OfferNames.offerNamesId = offerNamesId;
             Template.MixParlay.OfferNames.offerNames = offerNamesBlock;
             Template.MixParlay.SubTickets.subTicketsId = offerNamesId;
-        }
-
-        protected virtual void BuildDetailLink(ITicket ticket, ITicketHelper ticketHelper)
-        {
-            var isShowDetailLink = ShowDetailLink(ticket, ticketHelper);
-
-            Template.MoreInfo.Visible = isShowDetailLink;
-
-            if (!isShowDetailLink)
-            {
-                return;
-            }
-
-            var custId = GetCustId(ticket);
-            Template.MoreInfo.moreInfoFunction =
-                    string.IsNullOrWhiteSpace(ticketHelper.ClientDetailSystemParlayFunction)
-                            ? $"showCombMPDetail('{ticket.RefNo}', " +
-                                $"'{ticket.WinlostDate.ToString(CultureInfo.InvariantCulture)}', " +
-                                $"{ticket.TransId}, " +
-                                $"'{ticket.BetId}', " +
-                                $"{custId}, " +
-                                $"'{ticket.BetTeam}', this)"
-                            : ticketHelper.ClientDetailSystemParlayFunction;
-
-            Template.MoreInfo.moreInfoTitle = CN88Resources.details;
-            Template.MoreInfo.detailText = CN88Resources.details;
-        }
-
-        private static bool ShowDetailLink(ITicket ticket, ITicketHelper ticketHelper)
-            => ticketHelper.ShowSystemParlayDetail && IsAcceptedTicket(ticket);
-
-        private static bool IsAcceptedTicket(ITicket ticket)
-        {
-            var status = ticket.Status.ToLowerInvariant();
-
-            return status == BetStatus.Running
-                || status == BetStatus.Won
-                || status == BetStatus.Lose
-                || status == BetStatus.Draw;
         }
 
         private static string BuildMixParlaySubBetsFuncName(ITicket ticket, ITicketHelper ticketHelper)

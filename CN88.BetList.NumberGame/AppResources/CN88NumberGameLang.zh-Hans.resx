@@ -147,4 +147,7 @@
   <data name="next" xml:space="preserve">
     <value>下一个</value>
   </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>编号</value>
+  </data>
 </root>
