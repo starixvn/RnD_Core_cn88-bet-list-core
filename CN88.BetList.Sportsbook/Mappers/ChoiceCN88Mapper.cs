@@ -33,27 +33,27 @@
             ////First Team 3 Goals (423)
             MapIdToBaseId(SportsbookBetTypeIdConstant.FirstTeam3Goals, SportsbookBetTypeIdConstant.FirstTeam2Goals);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant._2HBothTeamsToScoreOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._2HBothTeamsToScoreOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.BothHalvesOver1_5YesNoOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.BothHalvesOver1_5YesNoOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.BothHalvesUnder1_5Own, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.BothHalvesUnder1_5Own, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToScoreInBothHalves, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToScoreInBothHalvesOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToScoreInBothHalves, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToScoreInBothHalvesOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToWinBothHalves, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToWinBothHalvesOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToWinBothHalves, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToWinBothHalvesOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToWinEitherHalf, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomeToWinEitherHalfOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToWinEitherHalf, SportsbookBetTypeIdConstant._1HBothTeamsToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayToWinEitherHalfOwn, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.HighestScoringHalfHomeTeam, SportsbookBetTypeIdConstant.HighestScoringHalf);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HighestScoringHalfHomeTeamOwn, SportsbookBetTypeIdConstant.HighestScoringHalfOwn);
 
-            MapIdToBaseId(SportsbookBetTypeIdConstant.HighestScoringHalfAwayTeam, SportsbookBetTypeIdConstant.HighestScoringHalf);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HighestScoringHalfAwayTeamOwn, SportsbookBetTypeIdConstant.HighestScoringHalfOwn);
 
             MapIdToBaseId(SportsbookBetTypeIdConstant.Home1HToScore_2HToScore, SportsbookBetTypeIdConstant.BothTeamsToScoreIn1H_2H);
 
@@ -113,7 +113,7 @@
             MapIdToBaseId(SportsbookBetTypeIdConstant._1H3WayHandicap, SportsbookBetTypeIdConstant._3WayHandicap);
 
             //// Map '1H Both Teams To Score / Result' to 'Both Teams To Score / Result'.
-            MapIdToBaseId(SportsbookBetTypeIdConstant._1HBothTeamsToScoreResult, SportsbookBetTypeIdConstant._2HHandicap);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HBothTeamsToScoreResult, SportsbookBetTypeIdConstant.BothTeamsToScoreResult);
 
             //// Map '1H Both Teams To Score / Total Goals' to 'Both Teams To Score / Total Goals'.
             MapIdToBaseId(SportsbookBetTypeIdConstant._1HBothTeamsToScore_TotalGoals, SportsbookBetTypeIdConstant.BothTeamsToScore_TotalGoals);

@@ -33,6 +33,7 @@
         public const int Handicap = 1;
         public const int _1HHandicap = 7;
         public const int _2HHandicap = 17;
+        public const int BothTeamsToScoreResult = 417;
         public const int FTGameHDP = 153;
         public const int SetxGameHandicap = 155;
         public const int QuarterXHandicap = 609;
