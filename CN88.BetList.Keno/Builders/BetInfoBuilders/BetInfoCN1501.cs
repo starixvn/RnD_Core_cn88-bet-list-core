@@ -6,7 +6,7 @@
     public class BetInfoCN1501 : BaseBetInfoCN88
     {
         protected override void BuildBetId(ITicket ticket, ITicketHelper ticketHelper)
-            => Template.OddsTypeAndBetId.BetId.betId = ticket.RefNo.ToString();
+            => Template.OddsTypeAndBetId.BetId.betId = ticket.RefNo;
 
         protected override void BuildOdds(ITicket ticket, ITicketHelper ticketHelper, Func<object, string> getOddsTypeName)
         {

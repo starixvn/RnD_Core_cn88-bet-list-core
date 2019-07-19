@@ -56,23 +56,14 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="CN88.BetList.Core, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.Core.1.0.0.6\lib\net461\CN88.BetList.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="CN88.BetList.ESports, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.ESports.1.0.0.2\lib\net461\CN88.BetList.ESports.dll</HintPath>
-    </Reference>
-    <Reference Include="CN88.BetList.Sportsbook, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.Sportsbook.1.0.0.7\lib\net461\CN88.BetList.Sportsbook.dll</HintPath>
-    </Reference>
     <Reference Include="Fanex.BetList.AGCasino, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.AGCasino.1.0.0.5\lib\net40\Fanex.BetList.AGCasino.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.Allbet, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Allbet.1.0.0.9\lib\net40\Fanex.BetList.Allbet.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    <Reference Include="Fanex.BetList.BetTrade, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.Bullfighting, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Bullfighting.1.2.0\lib\net40\Fanex.BetList.Bullfighting.dll</HintPath>
@@ -86,11 +77,11 @@
     <Reference Include="Fanex.BetList.ColossusBets, Version=1.0.1.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.ColossusBets.1.0.1.8\lib\net40\Fanex.BetList.ColossusBets.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.Core, Version=2.93.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    <Reference Include="Fanex.BetList.Core, Version=2.95.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.Core.RemotingRef, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.RemotingRef.1.0.0\lib\net461\Fanex.BetList.Core.RemotingRef.dll</HintPath>
+    <Reference Include="Fanex.BetList.Core.RemotingRef, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.RemotingRef.1.1.0\lib\net461\Fanex.BetList.Core.RemotingRef.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.ESports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.ESports.1.0.0\lib\net40\Fanex.BetList.ESports.dll</HintPath>
@@ -116,8 +107,8 @@
     <Reference Include="Fanex.BetList.Microgaming, Version=2.0.0.7, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Microgaming.2.0.0.7\lib\net40\Fanex.BetList.Microgaming.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.MyanmarOdds, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.MyanmarOdds.1.0.1.4\lib\net40\Fanex.BetList.MyanmarOdds.dll</HintPath>
+    <Reference Include="Fanex.BetList.MyanmarOdds, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.MyanmarOdds.1.1.0\lib\net40\Fanex.BetList.MyanmarOdds.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.NG2, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.NG2.1.0.3\lib\net40\Fanex.BetList.NG2.dll</HintPath>
@@ -134,14 +125,14 @@
     <Reference Include="Fanex.BetList.RnGCasino, Version=1.0.1.6, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.RnGCasino.1.0.1.6\lib\net40\Fanex.BetList.RnGCasino.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.VirtualSports, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.VirtualSports.1.4.0\lib\net40\Fanex.BetList.VirtualSports.dll</HintPath>
+    <Reference Include="Fanex.BetList.VirtualSports, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.VirtualSports.1.5.0\lib\net40\Fanex.BetList.VirtualSports.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.Voidbridge, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Voidbridge.1.1.0\lib\net40\Fanex.BetList.Voidbridge.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.RemotingRef, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.RemotingRef.1.3.0\lib\net461\Fanex.RemotingRef.dll</HintPath>
+    <Reference Include="Fanex.RemotingRef, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.RemotingRef.1.4.0\lib\net461\Fanex.RemotingRef.dll</HintPath>
     </Reference>
     <Reference Include="IBCFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.File.1.0.0\lib\net40\IBCFile.dll</HintPath>
@@ -150,8 +141,8 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\packages\NPOI.2.0.6\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="MessagePack, Version=1.7.3.4, Culture=neutral, PublicKeyToken=b4a0369545f0a1be, processorArchitecture=MSIL">
-      <HintPath>..\packages\MessagePack.1.7.3.4\lib\net45\MessagePack.dll</HintPath>
+    <Reference Include="MessagePack, Version=1.7.3.7, Culture=neutral, PublicKeyToken=b4a0369545f0a1be, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagePack.1.7.3.7\lib\net45\MessagePack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
@@ -420,6 +411,18 @@
       <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
       <Name>CN88.BetList.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CN88.BetList.Core\CN88.BetList.Core.csproj">
+      <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
+      <Name>CN88.BetList.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CN88.BetList.Core\CN88.BetList.Core.csproj">
+      <Project>{c04ce29f-dd75-439a-99b9-a2d65d70ca8d}</Project>
+      <Name>CN88.BetList.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CN88.BetList.ESports\CN88.BetList.ESports.csproj">
+      <Project>{28e7980e-ed75-41b2-b4fd-b02c2e251c68}</Project>
+      <Name>CN88.BetList.ESports</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CN88.BetList.Lottery\CN88.BetList.Lottery.csproj">
       <Project>{492ee3d3-bd35-42fa-aece-53f310149abf}</Project>
       <Name>CN88.BetList.Lottery</Name>
@@ -427,6 +430,10 @@
     <ProjectReference Include="..\CN88.BetList.NumberGame\CN88.BetList.NumberGame.csproj">
       <Project>{685ac355-43a7-4281-8121-f656c5298260}</Project>
       <Name>CN88.BetList.NumberGame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CN88.BetList.Sportsbook\CN88.BetList.Sportsbook.csproj">
+      <Project>{9df03ada-000e-4355-8625-2ba47b96fd64}</Project>
+      <Name>CN88.BetList.Sportsbook</Name>
     </ProjectReference>
     <ProjectReference Include="..\CN88.BetList.VirtualSports\CN88.BetList.VirtualSports.csproj">
       <Project>{2148be84-58f8-4693-a02d-e9f87010d571}</Project>
@@ -529,6 +536,7 @@
     <Content Include="App_Data\CN88\NonSportsBetTypes.xls" />
     <Content Include="App_Data\CN88\RefundResult.xls" />
     <Content Include="App_Data\CN88\Changes117713.xls" />
+    <Content Include="App_Data\CN88\PH4B.xls" />
     <None Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="fonts\glyphicons-halflings-regular.ttf" />
     <None Include="fonts\glyphicons-halflings-regular.woff" />
@@ -542,6 +550,7 @@
     <Content Include="Views\BetListCN88\Sportsbook.cshtml" />
     <Content Include="Views\BetListCN88\Index.cshtml" />
     <Content Include="Views\BetListCN88\Changes117713.cshtml" />
+    <Content Include="Views\BetListCN88\PH4B.cshtml" />
     <Content Include="Views\BetListCN88\RefundResult.cshtml" />
   </ItemGroup>
   <ItemGroup>

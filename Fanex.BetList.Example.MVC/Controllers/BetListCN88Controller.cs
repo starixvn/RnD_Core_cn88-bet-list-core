@@ -67,6 +67,17 @@
 
             return View(model);
         }
+        
+        public ActionResult PH4B(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/PH4B.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
 
         public ActionResult Changes117713(BetListData model = null)
         {

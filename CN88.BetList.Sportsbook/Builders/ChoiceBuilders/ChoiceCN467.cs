@@ -11,7 +11,7 @@
             Template.BetChoice.ChoiceName.choiceName = GetChoiceName(ticket);
         }
 
-        private string GetChoiceName(ITicket ticket)
+        private static string GetChoiceName(ITicket ticket)
         {
             var standardizedBetTeam = ticket.BetTeam?.ToUpperInvariant();
             if (string.IsNullOrWhiteSpace(standardizedBetTeam))

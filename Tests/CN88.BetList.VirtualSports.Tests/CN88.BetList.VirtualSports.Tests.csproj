@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CN88.BetList.Core, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CN88.BetList.Core.1.0.0.6\lib\net461\CN88.BetList.Core.dll</HintPath>
+    <Reference Include="CN88.BetList.Core, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CN88.BetList.Core.1.0.0.7\lib\net461\CN88.BetList.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    <Reference Include="Fanex.BetList.BetTrade, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.Core, Version=2.93.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    <Reference Include="Fanex.BetList.Core, Version=2.95.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
     </Reference>
     <Reference Include="IBCFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Fanex.File.1.0.0\lib\net40\IBCFile.dll</HintPath>
@@ -50,15 +50,6 @@
     </Reference>
     <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OOXML.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute, Version=2.0.3.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NSubstitute.2.0.3\lib\net45\NSubstitute.dll</HintPath>
@@ -79,6 +70,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\BetInfoBuilders\BaseVirtualSportsBetInfoCN88Tests.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN2809Tests.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN2799Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\BaseVirtualSportsChoiceCN88Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1203Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1204Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1205Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1220Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1206Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1224Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1231Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1233Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1235Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1236Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1201Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2701Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2705Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2703Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2702Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2801Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2805Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2803Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2802Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2707Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2807Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2808Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2809Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2799Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\CN88VirtualSportsChoiceUtilsTests.cs" />
+    <Compile Include="Constants\VirtualSportsCommonConstantTests.cs" />
     <Compile Include="Mappers\BetInfoCN88MapperTests.cs" />
     <Compile Include="Mappers\ChoiceCN88MapperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +113,7 @@
       <Name>CN88.BetList.VirtualSports</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

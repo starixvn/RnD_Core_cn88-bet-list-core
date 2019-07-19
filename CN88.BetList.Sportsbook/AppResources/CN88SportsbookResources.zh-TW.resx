@@ -132,4 +132,13 @@
   <data name="FiveAndOver" xml:space="preserve">
     <value>5球或以上</value>
   </data>
+  <data name="CornerBefore" xml:space="preserve">
+    <value>在{0}:00前有角球</value>
+  </data>
+  <data name="NoCornerBefore" xml:space="preserve">
+    <value>在{0}:00前無角球</value>
+  </data>
+  <data name="Exact" xml:space="preserve">
+    <value>精準</value>
+  </data>
 </root>

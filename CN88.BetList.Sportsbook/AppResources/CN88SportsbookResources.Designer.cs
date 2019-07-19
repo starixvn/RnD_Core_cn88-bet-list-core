@@ -69,6 +69,24 @@ namespace CN88.BetList.Core.AppResources
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to Corner Before {0}:00.
+        /// </summary>
+        public static string CornerBefore {
+            get {
+                return ResourceManager.GetString("CornerBefore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exact.
+        /// </summary>
+        public static string Exact {
+            get {
+                return ResourceManager.GetString("Exact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 5+.
         /// </summary>
         public static string FiveAndOver
@@ -90,6 +108,15 @@ namespace CN88.BetList.Core.AppResources
             }
         }
 
+        /// <summary>
+        ///   Looks up a localized string similar to No Corner Before {0}:00.
+        /// </summary>
+        public static string NoCornerBefore {
+            get {
+                return ResourceManager.GetString("NoCornerBefore", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to 7+.
         /// </summary>

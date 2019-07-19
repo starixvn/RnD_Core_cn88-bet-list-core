@@ -51,17 +51,8 @@
 
         protected virtual void BuildOfferNamesBlock(ITicket ticket, ITicketHelper ticketHelper)
         {
-            var offerNames = ticketHelper.GetCombinationMPOfferNameList(
-                    ticket.BetTeam, ticket.BetCheck, ticket.Handicap1, ticket.Handicap2);
-            var offerNamesBlock = string.Empty;
-
-            if (offerNames != null)
-            {
-                offerNamesBlock = string.Join(
-                    string.Empty,
-                    offerNames.Select(name => $"<div>{name}</div>"));
-            }
-
+            var offerNames = ticketHelper.GetCombinationMPOfferNameList(ticket.BetTeam, ticket.BetCheck, ticket.Handicap1, ticket.Handicap2);
+            var offerNamesBlock = offerNames == null ? string.Empty : string.Concat(offerNames.Select(name => $"<div>{name}</div>"));
             var offerNamesId = $"{ticket.TransId}-{ticketHelper.Index}";
             Template.MixParlay.OfferNames.offerNamesId = offerNamesId;
             Template.MixParlay.OfferNames.offerNames = offerNamesBlock;

@@ -118,5 +118,35 @@
         public const int HighestScoringHalf = 140;
         public const int HighestScoringHalfHomeTeam = 141;
         public const int HighestScoringHalfAwayTeam = 142;
+
+        public const int CornersOddEvenOwn = 470;
+        public const int _1HCornersOddEvenOwn = 471;
+        public const int _2HCornersOddEven = 472;
+        public const int TotalCorners = 473;
+        public const int _1HTotalCornersOwn = 474;
+        public const int AlternativeCorners = 475;
+        public const int _1HAlternativeCorners = 476;
+        public const int Corner3WayHandicap = 477;
+        public const int _1HCorner3WayHandicap = 478;
+        public const int TimeOfFirstCorner = 479;
+        public const int TimeOf2HFirstCorner = 481;
+        public const int HomeTeamCornersOverUnder = 482;
+        public const int AwayTeamCornersOverUnder = 483;
+        public const int _1HHomeTeamCornersOverUnder = 484;
+        public const int _1HAwayTeamCornersOverUnder = 485;
+        public const int CornersRace = 486;
+        public const int _1HCornersRace = 487;
+        public const int FirstCorner2Way = 488;
+        public const int _1HFirstCorner2Way = 489;
+        public const int _2HFirstCorner2Way = 490;
+        public const int LastCorner2Way = 491;
+        public const int _1HLastCorner2Way = 492;
+        public const int HTFTTotalCorners = 493;
+        public const int _1HCorrectCorners = 494;
+        public const int _2HCorrectCorners = 495;
+        public const int CornerHighestScoringHalf = 496;
+        public const int CornerHighestScoringHalf2Way = 497;
+        public const int FirstHalfHomeTeamOddEven = 136;
+        public const int HighestScoringHalf2Way = 452;
     }
 }

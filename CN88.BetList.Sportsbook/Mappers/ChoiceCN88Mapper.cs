@@ -58,6 +58,8 @@
             MapIdToBaseId(SportsbookBetTypeIdConstant.Home1HToScore_2HToScore, SportsbookBetTypeIdConstant.BothTeamsToScoreIn1H_2H);
 
             MapIdToBaseId(SportsbookBetTypeIdConstant.Away1HToScore_2HToScore, SportsbookBetTypeIdConstant.BothTeamsToScoreIn1H_2H);
+
+            MapForPH4B();
         }
 
         private void MapForHandicap()
@@ -183,6 +185,32 @@
         {
             // 30 1H Correct Score
             MapIdToBaseId(SportsbookBetTypeIdConstant._1HOddEven, SportsbookBetTypeIdConstant.OddEven);
+        }
+
+        private void MapForPH4B()
+        {
+            MapIdToBaseId(SportsbookBetTypeIdConstant.CornersOddEvenOwn, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HCornersOddEvenOwn, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._2HCornersOddEven, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HTotalCornersOwn, SportsbookBetTypeIdConstant.TotalCorners);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HAlternativeCorners, SportsbookBetTypeIdConstant.AlternativeCorners);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.Corner3WayHandicap, SportsbookBetTypeIdConstant._3WayHandicap);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HCorner3WayHandicap, SportsbookBetTypeIdConstant._3WayHandicap);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.TimeOf2HFirstCorner, SportsbookBetTypeIdConstant.TimeOfFirstCorner);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayTeamCornersOverUnder, SportsbookBetTypeIdConstant.HomeTeamCornersOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HHomeTeamCornersOverUnder, SportsbookBetTypeIdConstant.HomeTeamCornersOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HAwayTeamCornersOverUnder, SportsbookBetTypeIdConstant.HomeTeamCornersOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HCornersRace, SportsbookBetTypeIdConstant.CornersRace);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HFirstCorner2Way, SportsbookBetTypeIdConstant.FirstCorner2Way);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._2HFirstCorner2Way, SportsbookBetTypeIdConstant.FirstCorner2Way);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.LastCorner2Way, SportsbookBetTypeIdConstant.FirstCorner2Way);
+            MapIdToBaseId(SportsbookBetTypeIdConstant._1HLastCorner2Way, SportsbookBetTypeIdConstant.FirstCorner2Way);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant._2HCorrectCorners, SportsbookBetTypeIdConstant._1HCorrectCorners);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.CornerHighestScoringHalf2Way, SportsbookBetTypeIdConstant.HighestScoringHalf2Way);
         }
     }
 }

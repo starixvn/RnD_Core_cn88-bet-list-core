@@ -33,14 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CN88.BetList.Core, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CN88.BetList.Core.1.0.0.6\lib\net461\CN88.BetList.Core.dll</HintPath>
+    <Reference Include="CN88.BetList.Core, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CN88.BetList.Core.1.0.0.7\lib\net461\CN88.BetList.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+    <Reference Include="Fanex.BetList.BetTrade, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.Core, Version=2.93.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Fanex.BetList.Core.2.93.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    <Reference Include="Fanex.BetList.Core, Version=2.95.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Fanex.BetList.Core.2.95.0\lib\net40\Fanex.BetList.Core.dll</HintPath>
     </Reference>
     <Reference Include="IBCFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Fanex.File.1.0.0\lib\net40\IBCFile.dll</HintPath>
@@ -50,15 +50,6 @@
     </Reference>
     <Reference Include="NPOI, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OOXML, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OOXML.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats, Version=2.0.6.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NPOI.2.0.6\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute, Version=2.0.3.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NSubstitute.2.0.3\lib\net45\NSubstitute.dll</HintPath>
@@ -79,9 +70,89 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN29Tests.cs" />
+    <Compile Include="Builders\BetInfoBuilders\BetInfoCN154Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN10Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN121Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN122Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN123Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN128Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN129Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN13Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN130Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN131Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN136Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN14Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN143Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN15Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN156Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN16Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN18Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN2Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN22Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN221Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN223Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN24Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN26Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN28Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN29Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN3Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN4Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN401Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN407Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN406Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN408Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN412Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN416Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN415Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN417Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN418Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN419Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN422Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN424Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN425Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN426Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN427Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN428Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN429Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN430Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN431Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN442Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN445Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN449Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN448Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN450Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN452Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN451Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN454Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN455Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN458Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN468Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN469Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN496Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN494Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN493Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN486Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN482Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN479Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN475Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN473Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN467Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN5Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN459Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN6Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN601Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN602Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN603Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN608Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN610Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN611Tests.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN614Tests.cs" />
+    <Compile Include="Common\TestData.cs" />
+    <Compile Include="Constants\SportsbookCommonConstantTests.cs" />
     <Compile Include="Mappers\BetInfoCN88MapperTests.cs" />
     <Compile Include="Mappers\ChoiceCN88MapperTests.cs" />
-    <Compile Include="Mappers\ParentChildCN88MapperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
