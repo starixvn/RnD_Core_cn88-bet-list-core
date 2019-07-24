@@ -16,7 +16,7 @@ namespace Fanex.BetList.Example.MVC
                 defaults: new
                 {
                     controller = "BetListCN88",
-                    action = "Sportsbook",
+                    action = "Index",
                     id = UrlParameter.Optional
                 }
             );

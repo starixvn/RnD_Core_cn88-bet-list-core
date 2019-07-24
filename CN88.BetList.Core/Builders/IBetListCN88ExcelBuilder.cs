@@ -43,5 +43,7 @@
         IBetListCN88ExcelBuilder AddChoice(ITicket ticket, ITicketHelper ticketHelper, List<ITicketData> ticketData);
 
         IBetListCN88ExcelBuilder AddBetInfo(ITicket ticket, ITicketHelper ticketHelper, Func<object, string> getOddsTypeName);
+
+        IBetListCN88ExcelBuilder AddStatus(ITicket ticket, ITicketHelper ticketHelper, List<ITicketData> ticketData);
     }
 }

@@ -1,7 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_LayoutCN88.cshtml";
 }
-
 @using Fanex.BetList.Core.Entities
 @using CN88.BetList.Core.Builders;
 @using Fanex.BetList.Example.MVC.ViewModel
@@ -10,7 +9,6 @@
 @using Fanex.BetList.Core.Factories
 @using Fanex.BetList.Core.Builder
 @using Fanex.BetList.Core.TicketHelper
-
 @model BetListData
 @{
     ViewBag.Title = "Bet List CN88 Demo";
@@ -30,11 +28,9 @@
     var isShowScoreMap = Model.BetTypeId == 145 || Model.BetTypeId == 146 || Model.BetTypeId == 151;
     var rowIndex = 0;
 }
-
 @using (Html.BeginForm())
 {
     <div class="panel panel-default">
-
         <div class="panel-body">
             <div class="row">
                 <div class="col-lg-3">
@@ -83,12 +79,14 @@
                 Odds (MBC)
             </th>
             <th>
-                ITicket
+                Status
             </th>
+            @*<th>
+                    ITicket
+                </th>*@
         </tr>
     </thead>
     <tbody>
-
         @foreach (var ticket in tickets)
         {
             rowIndex++;
@@ -106,23 +104,25 @@
                 <td class="text-left">
                     @Html.Raw(cn88Builder.BuildChoice(ticket, ticketHelper, ticketData))
                 </td>
-            <td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
+                <td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
                     @Html.Raw(builder.BuildChoice(ticket, ticketHelper, ticketData, isShowScoreMap))
                 </td>
                 <td class="text-left">
                     @Html.Raw(builder.BuildOdds(ticket, ticketData, ticketHelper.GetOddsTypeNameById))
                 </td>
-                <td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
-                    @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ticket, Newtonsoft.Json.Formatting.Indented))
+                <td class="text-center">
+                    @Html.Raw(builder.BuildStatus(ticket, ticketHelper, ticketData, false))
                 </td>
+                @*<td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
+                        @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ticket, Newtonsoft.Json.Formatting.Indented))
+                    </td>*@
             </tr>
         }
     </tbody>
 </table>
-
 <script src="~/Scripts/chosen_v1.8.7/chosen.jquery.min.js"></script>
 <script>
-    
+
 
     $(function () {
         $("#BetTypeId").chosen();

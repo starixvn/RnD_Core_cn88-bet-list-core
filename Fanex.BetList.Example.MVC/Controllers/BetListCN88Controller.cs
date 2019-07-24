@@ -31,14 +31,15 @@
             set { Session["DataSourcePath"] = value; }
         }
 
+        public ActionResult Index()
+            => View();
+
         public ActionResult Sportsbook(BetListData model = null)
         {
             var betTypes = dataService.QueryBetTypes();
             ViewBag.BetTypes = CreateSelectListItem(betTypes);
             DataSourcePath = "~/App_Data/CN88/Sportsbook.xls";
-#pragma warning disable S1226 // Method parameters, caught exceptions and foreach variables' initial values should not be ignored
             model = GetDataSource(model, sourcePath: DataSourcePath);
-#pragma warning restore S1226 // Method parameters, caught exceptions and foreach variables' initial values should not be ignored
             model.DataFilePath = DataSourcePath;
 
             return View(model);
@@ -49,9 +50,18 @@
             var betTypes = dataService.QueryCN88NonSportsBetTypes();
             ViewBag.BetTypes = CreateSelectListItem(betTypes);
             DataSourcePath = "~/App_Data/CN88/NonSports.xls";
-#pragma warning disable S1226 // Method parameters, caught exceptions and foreach variables' initial values should not be ignored
             model = GetDataSource(model, sourcePath: DataSourcePath);
-#pragma warning restore S1226 // Method parameters, caught exceptions and foreach variables' initial values should not be ignored
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
+
+        public ActionResult RefundResult(BetListData model = null)
+        {
+            var betTypes = dataService.QueryCN88NonSportsBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/RefundResult.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
             model.DataFilePath = DataSourcePath;
 
             return View(model);
@@ -104,7 +114,7 @@
             var builder = new BetListCN88ExcelBuilder();
             ITicketHelper ticketHelper = new TicketHelper();
             Func<object, string> funcGetOddsTypeName = ticketHelper.GetOddsTypeNameById;
-            const short excelColumns = 3;
+            const short excelColumns = 4;
             builder.BuildWorksheet("BetList", excelColumns);
             var index = 0;
 
@@ -122,7 +132,8 @@
                     builder
                         .AddNo(index)
                         .AddBetInfo(ticket, ticketHelper, funcGetOddsTypeName)
-                        .AddChoice(ticket, ticketHelper, ticketData);
+                        .AddChoice(ticket, ticketHelper, ticketData)
+                        .AddStatus(ticket, ticketHelper, ticketData);
                 }
 
                 var ms = new MemoryStream();

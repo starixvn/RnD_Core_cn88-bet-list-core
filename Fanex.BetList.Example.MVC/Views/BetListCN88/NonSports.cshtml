@@ -79,8 +79,11 @@
                 Odds (MBC)
             </th>
             <th>
-                ITicket
+                Status
             </th>
+            @*<th>
+                    ITicket
+                </th>*@
         </tr>
     </thead>
     <tbody>
@@ -107,9 +110,12 @@
                 <td class="text-left">
                     @Html.Raw(builder.BuildOdds(ticket, ticketData, ticketHelper.GetOddsTypeNameById))
                 </td>
-                <td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
-                    @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ticket, Newtonsoft.Json.Formatting.Indented))
+                <td class="text-center">
+                    @Html.Raw(builder.BuildStatus(ticket, ticketHelper, ticketData, false))
                 </td>
+                @*<td class="text-right" style="width: 45%; text-align: justify; font-size:10px;">
+                        @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ticket, Newtonsoft.Json.Formatting.Indented))
+                    </td>*@
             </tr>
         }
     </tbody>
