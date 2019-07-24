@@ -23,6 +23,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{D4B5E822-602C-4470-8149-55D6091D20D3}"
 	ProjectSection(SolutionItems) = preProject
 		SonarQube\BetListCoreCSharp.ruleset = SonarQube\BetListCoreCSharp.ruleset
+		SonarQube\CN88-BetListCoreCSharp.ruleset = SonarQube\CN88-BetListCoreCSharp.ruleset
 		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
 	EndProjectSection
 EndProject
