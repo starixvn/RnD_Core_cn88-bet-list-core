@@ -73,7 +73,6 @@
     <None Include="Data\BetListDummyData.xls">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Fanex.BetList.Example.Data.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

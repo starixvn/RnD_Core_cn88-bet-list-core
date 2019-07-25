@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_CodeAnalysis", "_CodeAnaly
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Example", "_Example", "{24BA1707-BE2A-4391-8A57-747DE7EAA0D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{486008E8-F444-4221-8AD0-E3C4DFAC5CB5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.BetList.Example.Data", "Fanex.BetList.Example.Data\Fanex.BetList.Example.Data.csproj", "{CF75E712-CD28-42EF-A9F7-5DDE2B4E7BA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.BetList.Example.MVC", "Fanex.BetList.Example.MVC\Fanex.BetList.Example.MVC.csproj", "{8ACF58AD-9149-4D94-B2EB-996FA0E3F2DA}"
@@ -22,7 +20,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.BetList.Example.MVC.T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SonarQube", "SonarQube", "{D4B5E822-602C-4470-8149-55D6091D20D3}"
 	ProjectSection(SolutionItems) = preProject
-		SonarQube\BetListCoreCSharp.ruleset = SonarQube\BetListCoreCSharp.ruleset
 		SonarQube\CN88-BetListCoreCSharp.ruleset = SonarQube\CN88-BetListCoreCSharp.ruleset
 		SonarQube\SolutionBinding.sqconfig = SonarQube\SolutionBinding.sqconfig
 	EndProjectSection
