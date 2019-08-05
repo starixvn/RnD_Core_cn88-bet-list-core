@@ -104,7 +104,7 @@
             var builder = new BetListCN88ExcelBuilder();
             ITicketHelper ticketHelper = new TicketHelper();
             Func<object, string> funcGetOddsTypeName = ticketHelper.GetOddsTypeNameById;
-            const short excelColumns = 7;
+            const short excelColumns = 3;
             builder.BuildWorksheet("BetList", excelColumns);
             var index = 0;
 

@@ -414,6 +414,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CN88.BetList.Lottery\CN88.BetList.Lottery.csproj">
+      <Project>{492ee3d3-bd35-42fa-aece-53f310149abf}</Project>
+      <Name>CN88.BetList.Lottery</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CN88.BetList.NumberGame\CN88.BetList.NumberGame.csproj">
       <Project>{685ac355-43a7-4281-8121-f656c5298260}</Project>
       <Name>CN88.BetList.NumberGame</Name>

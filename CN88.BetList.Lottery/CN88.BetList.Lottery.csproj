@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\BetInfoBuilders\BetInfoCN1031.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN1037.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN1031.cs" />
     <Compile Include="Builders\CN88LotteryUtils.cs" />
     <Compile Include="Constants\LotteryBetTypeIdConstant.cs" />

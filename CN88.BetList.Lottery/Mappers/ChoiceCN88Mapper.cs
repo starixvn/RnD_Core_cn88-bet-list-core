@@ -17,8 +17,16 @@
 
             for (int betTypeId = BaseBetTypeId + 1; betTypeId <= MaxBetTypeIdRange; betTypeId++)
             {
+                if (betTypeId == LotteryBetTypeIdConstant.MaxDice_60 ||
+                    betTypeId == LotteryBetTypeIdConstant.MaxDice_90)
+                {
+                    continue;
+                }
+
                 MapIdToBaseId(betTypeId, BaseBetTypeId);
             }
+
+            MapIdToBaseId(LotteryBetTypeIdConstant.MaxDice_90, LotteryBetTypeIdConstant.MaxDice_60);
         }
     }
 }
