@@ -1,6 +1,6 @@
 ﻿namespace CN88.BetList.Core.Builders.ChoiceBuilders
 {
-    using Fanex.BetList.Core.App_GlobalResources;
+    using CN88.BetList.Core.Helpers;
     using Fanex.BetList.Core.Entities;
 
     /// <summary>
@@ -10,7 +10,7 @@
     {
         protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
         {
-            Template.BetChoice.ChoiceName.choiceName = $"{CoreBetList.FtAsian}{CoreBetList.Seperator1X2}{ticket.BetTeam?.ToUpperInvariant()}";
+            Template.BetChoice.ChoiceName.choiceName = CN88TicketHelper.Get1x2ChoiceValue(ticket, ticketHelper);
         }
     }
 }

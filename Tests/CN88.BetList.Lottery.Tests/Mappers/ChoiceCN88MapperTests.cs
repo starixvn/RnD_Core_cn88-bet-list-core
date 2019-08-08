@@ -6,7 +6,7 @@
 
     public class ChoiceCN88MapperTests
     {
-        [TestCase(LotteryBetTypeIdConstant.MaxDice_90, LotteryBetTypeIdConstant.Max5D_60)]
+        [TestCase(LotteryBetTypeIdConstant.MaxDice_90, LotteryBetTypeIdConstant.MaxDice_60)]
         public void Init_Always_MapCorrectIdToId(int sourceId, int expectedTargetId)
         {
             // Act.

@@ -11,6 +11,7 @@
     using Fanex.BetList.Core.Entities;
     using Fanex.BetList.Core.TicketHelper;
     using Fanex.BetList.Example.Extension.BetListExcelBuilderExt;
+    using Fanex.BetList.Example.MVC.Excels;
     using Fanex.BetList.Example.MVC.Models;
     using Fanex.BetList.Example.MVC.Services;
     using Fanex.BetList.Example.MVC.ViewModel;
@@ -61,6 +62,17 @@
             var betTypes = dataService.QueryCN88NonSportsBetTypes();
             ViewBag.BetTypes = CreateSelectListItem(betTypes);
             DataSourcePath = "~/App_Data/CN88/RefundResult.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
+
+        public ActionResult Changes117713(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/Changes117713.xls";
             model = GetDataSource(model, sourcePath: DataSourcePath);
             model.DataFilePath = DataSourcePath;
 
@@ -132,8 +144,8 @@
                     builder
                         .AddNo(index)
                         .AddBetInfo(ticket, ticketHelper, funcGetOddsTypeName)
-                        .AddChoice(ticket, ticketHelper, ticketData)
-                        .AddStatus(ticket, ticketHelper, ticketData);
+                        .AddChoice(ticket, ticketHelper, ticketData);
+                    BetListExcelBuilderExtension.AddStatus(builder, ticket, ticketHelper, ticketData);
                 }
 
                 var ms = new MemoryStream();

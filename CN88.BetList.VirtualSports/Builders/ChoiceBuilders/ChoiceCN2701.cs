@@ -1,7 +1,7 @@
 ﻿namespace CN88.BetList.Core.Builders.ChoiceBuilders
 {
     using System.Collections.Generic;
-    using Fanex.BetList.Core.App_GlobalResources;
+    using CN88.BetList.Core.Helpers;
     using Fanex.BetList.Core.Entities;
 
     public class ChoiceCN2701 : BaseVirtualSportsChoiceCN88
@@ -11,7 +11,7 @@
             Template.BetChoiceMoreInfo.Hide();
             Template.BetChoice.ChoiceValue.Hide();
 
-            Template.BetChoice.ChoiceName.choiceName = string.Join(null, new[] { CoreBetList.ft, ".", ticket.BetTeam.ToUpperInvariant() });
+            Template.BetChoice.ChoiceName.choiceName = CN88TicketHelper.Get1x2ChoiceValue(ticket, ticketHelper);
         }
 
         protected override void BuildKickOffTime(ITicket ticket, ITicketHelper ticketHelper)

@@ -33,8 +33,8 @@
     <CodeAnalysisRuleSet>CN88.BetList.Sportsbook.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CN88.BetList.Core, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.Core.1.0.0.4\lib\net461\CN88.BetList.Core.dll</HintPath>
+    <Reference Include="CN88.BetList.Core, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CN88.BetList.Core.1.0.0.6\lib\net461\CN88.BetList.Core.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Core.2.90.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
@@ -182,6 +182,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CN88SportsbookResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="AppResources\CN88SportsbookResources.zh-CN.resx" />
     <EmbeddedResource Include="AppResources\CN88SportsbookResources.zh-Hans.resx" />
     <EmbeddedResource Include="AppResources\CN88SportsbookResources.zh-TW.resx" />
   </ItemGroup>

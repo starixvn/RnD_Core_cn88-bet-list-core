@@ -6,7 +6,6 @@
     using CN88.BetList.Core.Builders.BetInfoBuilders;
     using CN88.BetList.Core.Builders.ChoiceBuilders;
     using CN88.BetList.Core.Constants;
-    using Fanex.BetList.Core.Builder;
     using Fanex.BetList.Core.Entities;
     using Fanex.BetList.Core.Utils;
     using Fanex.BetList.Core.Utils.NPOIExt;
@@ -213,16 +212,6 @@
             IBetInfoCN88 betInfoBuilder = CreateBetInfoBuilder(ticket.BetTypeId);
             var rtfBetInfo = betInfoBuilder.RenderRTF(ticket, ticketHelper, getOddsTypeName, RTFHelper);
             AddCell(rtfBetInfo);
-
-            return this;
-        }
-
-        public IBetListCN88ExcelBuilder AddStatus(ITicket ticket, ITicketHelper ticketHelper, List<ITicketData> ticketData)
-        {
-            var builder = new BetListExcelBuilder();
-            var rtfStatus = builder.CreateStatusBuilder(ticket.BetTypeId)
-                    .RenderRTF(ticket, ticketHelper, null, false, RTFHelper);
-            AddCell(rtfStatus);
 
             return this;
         }

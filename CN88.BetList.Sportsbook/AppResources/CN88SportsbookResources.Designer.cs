@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CN88.BetList.Core.AppResources {
-    using System;
-    
-    
+namespace CN88.BetList.Core.AppResources
+{
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,85 +22,103 @@ namespace CN88.BetList.Core.AppResources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CN88SportsbookResources {
-        
+    public class CN88SportsbookResources
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CN88SportsbookResources() {
+        internal CN88SportsbookResources()
+        {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        public static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CN88.BetList.Core.AppResources.CN88SportsbookResources", typeof(CN88SportsbookResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
-            get {
+        public static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 5+.
         /// </summary>
-        public static string FiveAndOver {
-            get {
+        public static string FiveAndOver
+        {
+            get
+            {
                 return ResourceManager.GetString("FiveAndOver", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 4+.
         /// </summary>
-        public static string FourAndOver {
-            get {
+        public static string FourAndOver
+        {
+            get
+            {
                 return ResourceManager.GetString("FourAndOver", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 7+.
         /// </summary>
-        public static string SevenAndOver {
-            get {
+        public static string SevenAndOver
+        {
+            get
+            {
                 return ResourceManager.GetString("SevenAndOver", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 3+.
         /// </summary>
-        public static string ThreeAndOver {
-            get {
+        public static string ThreeAndOver
+        {
+            get
+            {
                 return ResourceManager.GetString("ThreeAndOver", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 3+.
         /// </summary>
-        public static string ThreeOver {
-            get {
+        public static string ThreeOver
+        {
+            get
+            {
                 return ResourceManager.GetString("ThreeOver", resourceCulture);
             }
         }

@@ -33,11 +33,11 @@
     <CodeAnalysisRuleSet>CN88.BetList.ESports.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CN88.BetList.Core, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.Core.1.0.0.4\lib\net461\CN88.BetList.Core.dll</HintPath>
+    <Reference Include="CN88.BetList.Core, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CN88.BetList.Core.1.0.0.6\lib\net461\CN88.BetList.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CN88.BetList.Sportsbook, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CN88.BetList.Sportsbook.1.0.0.5\lib\net461\CN88.BetList.Sportsbook.dll</HintPath>
+    <Reference Include="CN88.BetList.Sportsbook, Version=1.0.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CN88.BetList.Sportsbook.1.0.0.7\lib\net461\CN88.BetList.Sportsbook.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.BetTrade, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.BetList.Core.2.90.0\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>

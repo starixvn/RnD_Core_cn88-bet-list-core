@@ -1,10 +1,10 @@
 ﻿namespace CN88.BetList.Core.Builders.ChoiceBuilders
 {
     using System.Collections.Generic;
+    using CN88.BetList.Core.Helpers;
     using Fanex.BetList.Core.App_GlobalResources;
     using Fanex.BetList.Core.Constants;
     using Fanex.BetList.Core.Entities;
-    using Fanex.BetList.Core.Utils;
 
     public class ChoiceCN3 : BaseChoiceCN88
     {
@@ -14,7 +14,7 @@
 
             Template.BetChoice.ChoiceValue.Show();
 
-            Template.BetChoice.ChoiceValue.choiceValue = ConvertByBetType.Hdp(ticket.Handicap1);
+            Template.BetChoice.ChoiceValue.choiceValue = CN88TicketHelper.GetHandicap(ticket.Handicap1);
 
             CalculateChoiceName(ticket, ticketHelper);
         }
