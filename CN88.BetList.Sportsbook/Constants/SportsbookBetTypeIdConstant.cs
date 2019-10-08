@@ -148,5 +148,19 @@
         public const int CornerHighestScoringHalf2Way = 497;
         public const int FirstHalfHomeTeamOddEven = 136;
         public const int HighestScoringHalf2Way = 452;
+
+        public const int MatchHandicap = 701;
+        public const int MatchPointHandicap = 704;
+        public const int GameXPointHandicap = 708;
+        public const int MatchNumberOfGames = 702;
+        public const int MatchPointOverUnder = 705;
+        public const int GameXPointOverUnder = 709;
+        public const int MatchPointOddEven = 706;
+        public const int GameXPointOddEven = 710;
+        public const int GameXRaceToYPoints = 712;
+        public const int GameXPointYWinner = 713;
+        public const int GameXWinner = 707;
+        public const int GameXWinningMargin = 711;
+        public const int GameXExtraPoints = 714;
     }
 }

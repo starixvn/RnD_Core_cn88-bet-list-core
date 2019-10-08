@@ -60,6 +60,7 @@
             MapIdToBaseId(SportsbookBetTypeIdConstant.Away1HToScore_2HToScore, SportsbookBetTypeIdConstant.BothTeamsToScoreIn1H_2H);
 
             MapForPH4B();
+            MapForBadminton();
         }
 
         private void MapForHandicap()
@@ -211,6 +212,21 @@
 
             MapIdToBaseId(SportsbookBetTypeIdConstant._2HCorrectCorners, SportsbookBetTypeIdConstant._1HCorrectCorners);
             MapIdToBaseId(SportsbookBetTypeIdConstant.CornerHighestScoringHalf2Way, SportsbookBetTypeIdConstant.HighestScoringHalf2Way);
+        }
+
+        private void MapForBadminton()
+        {
+            MapIdToBaseId(SportsbookBetTypeIdConstant.MatchHandicap, SportsbookBetTypeIdConstant.Handicap);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.MatchPointHandicap, SportsbookBetTypeIdConstant.Handicap);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.GameXPointHandicap, SportsbookBetTypeIdConstant.Handicap);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant.MatchNumberOfGames, SportsbookBetTypeIdConstant._2HOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.MatchPointOverUnder, SportsbookBetTypeIdConstant._2HOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.GameXPointOverUnder, SportsbookBetTypeIdConstant._2HOverUnder);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant.MatchPointOddEven, SportsbookBetTypeIdConstant._2HOddEvenOwn);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.GameXPointOddEven, SportsbookBetTypeIdConstant._2HOddEvenOwn);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.GameXExtraPoints, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
         }
     }
 }

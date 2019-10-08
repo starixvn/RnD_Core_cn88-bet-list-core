@@ -32,6 +32,15 @@
         [TestCase(SportsbookBetTypeIdConstant._1HLastCorner2Way, SportsbookBetTypeIdConstant.FirstCorner2Way)]
         [TestCase(SportsbookBetTypeIdConstant._2HCorrectCorners, SportsbookBetTypeIdConstant._1HCorrectCorners)]
         [TestCase(SportsbookBetTypeIdConstant.CornerHighestScoringHalf2Way, SportsbookBetTypeIdConstant.HighestScoringHalf2Way)]
+        [TestCase(SportsbookBetTypeIdConstant.MatchHandicap, SportsbookBetTypeIdConstant.Handicap)]
+        [TestCase(SportsbookBetTypeIdConstant.MatchPointHandicap, SportsbookBetTypeIdConstant.Handicap)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointHandicap, SportsbookBetTypeIdConstant.Handicap)]
+        [TestCase(SportsbookBetTypeIdConstant.MatchNumberOfGames, SportsbookBetTypeIdConstant._2HOverUnder)]
+        [TestCase(SportsbookBetTypeIdConstant.MatchPointOverUnder, SportsbookBetTypeIdConstant._2HOverUnder)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointOverUnder, SportsbookBetTypeIdConstant._2HOverUnder)]
+        [TestCase(SportsbookBetTypeIdConstant.MatchPointOddEven, SportsbookBetTypeIdConstant._2HOddEvenOwn)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointOddEven, SportsbookBetTypeIdConstant._2HOddEvenOwn)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXExtraPoints, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn)]
         public void Init_Always_MapCorrectIdToId(int sourceId, int expectedTargetId)
         {
             // Act.

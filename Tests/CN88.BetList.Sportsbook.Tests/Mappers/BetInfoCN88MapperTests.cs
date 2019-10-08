@@ -8,6 +8,13 @@
     {
         [TestCase(155, SportsbookBetTypeIdConstant.SetxWinner)]
         [TestCase(410, SportsbookBetTypeIdConstant.ExactHomeTeamGoals)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointHandicap, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointOverUnder, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointOddEven, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXWinningMargin, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXRaceToYPoints, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXPointYWinner, SportsbookBetTypeIdConstant.GameXWinner)]
+        [TestCase(SportsbookBetTypeIdConstant.GameXExtraPoints, SportsbookBetTypeIdConstant.GameXWinner)]
         public void Init_Always_MapCorrectIdToId(int sourceId, int expectedTargetId)
         {
             // Act.

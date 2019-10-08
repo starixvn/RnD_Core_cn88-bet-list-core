@@ -67,7 +67,7 @@
 
             return View(model);
         }
-        
+
         public ActionResult PH4B(BetListData model = null)
         {
             var betTypes = dataService.QueryBetTypes();
@@ -84,6 +84,17 @@
             var betTypes = dataService.QueryBetTypes();
             ViewBag.BetTypes = CreateSelectListItem(betTypes);
             DataSourcePath = "~/App_Data/CN88/Changes117713.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
+
+        public ActionResult Badminton(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/Badminton.xls";
             model = GetDataSource(model, sourcePath: DataSourcePath);
             model.DataFilePath = DataSourcePath;
 
