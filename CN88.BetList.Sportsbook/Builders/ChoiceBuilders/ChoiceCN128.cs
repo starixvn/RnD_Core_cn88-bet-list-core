@@ -13,7 +13,7 @@
             var betTeam = string.Empty;
 
 #pragma warning disable S131 // "switch/Select" statements should end with "default/Case Else" clauses
-            switch (ticket.BetTeam)
+            switch (ticket.BetTeam?.ToLowerInvariant())
 #pragma warning restore S131 // "switch/Select" statements should end with "default/Case Else" clauses
             {
                 case "oo":

@@ -21,7 +21,7 @@
                         ? CoreBetList.Home
                         : CoreBetList.Away;
                 var secondChance = string.Equals(BetTeamValue.X, betTeam[1].ToString(), StringComparison.InvariantCultureIgnoreCase)
-                        ? CoreBetList.lblDraw
+                        ? CoreBetList.draw
                         : CoreBetList.Away;
 
                 Template.BetChoice.ChoiceName.choiceName = $"{firstChance}<span class=\"underdog\"> {CoreBetList.lblOr} </span>{secondChance}";

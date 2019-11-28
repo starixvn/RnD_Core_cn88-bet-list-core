@@ -11,8 +11,8 @@
     {
         protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
         {
-            bool betHomeTeam = ticket.BetTeam != null && ticket.BetTeam.Contains(BetTeamValue.X);
-            var betTeam = betHomeTeam ? CoreBetList.lblDraw : Template.Match.awayTeam;
+            bool betHomeTeam = ticket.BetTeam != null && ticket.BetTeam.ToLowerInvariant().Contains(BetTeamValue.X);
+            var betTeam = betHomeTeam ? CoreBetList.draw : Template.Match.awayTeam;
 
             Template.BetChoice.ChoiceName.choiceName = betTeam;
         }

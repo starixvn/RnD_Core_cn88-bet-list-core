@@ -162,5 +162,27 @@
         public const int GameXWinner = 707;
         public const int GameXWinningMargin = 711;
         public const int GameXExtraPoints = 714;
+
+        public const int ExtraTimeOddEven = 400;
+        public const int ExtraTimeCorrectScore = 399;
+        public const int ExtraTimeDoubleChance = 398;
+        public const int ExtraTimeWinningMargin = 397;
+        public const int ExtraTimeNextGoal = 396;
+        public const int NextGoal = 22;
+        public const int PenaltyShootoutOddEvenFinal = 394;
+        public const int PenaltyShootoutOddEvenFirst10 = 393;
+        public const int PenaltyShootoutSuddenDeath = 390;
+        public const int HomePenaltyShootoutOverUnderFinal = 389;
+        public const int AwayPenaltyShootoutOverUnderFinal = 388;
+        public const int HomePenaltyShootoutOverUnderFirst10 = 387;
+        public const int AwayPenaltyShootoutOverUnderFirst10 = 386;
+        public const int PenaltyShootout1X2RoundX = 385;
+        public const int PenaltyShootoutBothOneNeitherRoundX = 384;
+        public const int PenaltyShootoutWoodworkRoundX = 383;
+        public const int HomePenaltyShootoutRoundX = 382;
+        public const int AwayPenaltyShootoutRoundX = 381;
+        public const int BothOneNeitherTeamToScore = 26;
+        public const int ExtraTimeNextGoalMethod = 395;
+        public const int FirstGoalMethod = 424;
     }
 }

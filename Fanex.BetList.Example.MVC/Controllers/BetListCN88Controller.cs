@@ -203,5 +203,16 @@
                 Response.End();
             }
         }
+
+        public ActionResult PHAIO5(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/PHAIO5.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
     }
 }

@@ -27,7 +27,7 @@
         }
 
         [TestCase("h", "Odd")]
-        [TestCase("H", "Even")]
+        [TestCase("H", "Odd")]
         [TestCase("A", "Even")]
         [TestCase("a", "Even")]
         [TestCase("", "Even")]

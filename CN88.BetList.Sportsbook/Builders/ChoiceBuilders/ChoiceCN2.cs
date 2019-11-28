@@ -12,7 +12,7 @@
         protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
         {
             Template.BetChoice.ChoiceName.choiceName =
-                ticket.BetTeam == BetTeamValue.H
+                ticket.BetTeam?.ToLowerInvariant() == BetTeamValue.H
                 ? CoreBetList.odd
                 : CoreBetList.even;
         }

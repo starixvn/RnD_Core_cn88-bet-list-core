@@ -13,6 +13,7 @@
         private void Initialize()
         {
             MapForBadminton();
+            MapForPH();
 
             var bettypesByRefNo = new[]
             {
@@ -86,6 +87,14 @@
             MapIdToBaseId(SportsbookBetTypeIdConstant.GameXRaceToYPoints, SportsbookBetTypeIdConstant.GameXWinner);
             MapIdToBaseId(SportsbookBetTypeIdConstant.GameXPointYWinner, SportsbookBetTypeIdConstant.GameXWinner);
             MapIdToBaseId(SportsbookBetTypeIdConstant.GameXExtraPoints, SportsbookBetTypeIdConstant.GameXWinner);
+        }
+
+        private void MapForPH()
+        {
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutBothOneNeitherRoundX, SportsbookBetTypeIdConstant.PenaltyShootout1X2RoundX);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutWoodworkRoundX, SportsbookBetTypeIdConstant.PenaltyShootout1X2RoundX);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomePenaltyShootoutRoundX, SportsbookBetTypeIdConstant.PenaltyShootout1X2RoundX);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayPenaltyShootoutRoundX, SportsbookBetTypeIdConstant.PenaltyShootout1X2RoundX);
         }
     }
 }

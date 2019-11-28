@@ -9,7 +9,7 @@
     {
         protected override void BuildChoiceValue(ITicket ticket, ITicketHelper ticketHelper, List<ITicketData> ticketData)
         {
-            Template.BetChoice.ChoiceName.choiceName = ticket.BetTeam == BetTeamValue.H ? CN88NumberGameLang.warrior2ndBall : CN88NumberGameLang.warrior3rdBall;
+            Template.BetChoice.ChoiceName.choiceName = ticket.BetTeam?.ToLowerInvariant() == BetTeamValue.H ? CN88NumberGameLang.warrior2ndBall : CN88NumberGameLang.warrior3rdBall;
 
             Template.BetChoice.ChoiceValue = null;
         }

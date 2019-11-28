@@ -18,8 +18,7 @@
                     ? CoreBetList.AOS
                     : choice.Replace(":", "-");
 
-            if (BetTeamValue.AOS == ticket.BetTeam.ToLowerInvariant()
-                && !string.IsNullOrEmpty(ticket.TransDesc))
+            if (IsAOS(ticket))
             {
                 Template.BetChoiceMoreInfo.Show();
                 Template.BetChoiceMoreInfo.betChoiceMoreInfo = $"{CoreBetList.Excluding}: {FormatTransDesc(ticket.TransDesc)}";
@@ -43,5 +42,8 @@
                 rtfHelper.RTFRenderer.AddText($"\n{Template.BetChoiceMoreInfo.betChoiceMoreInfo.Replace("<br/>", "\n")}");
             }
         }
+
+        protected virtual bool IsAOS(ITicket ticket)
+            => BetTeamValue.AOS == ticket.BetTeam.ToLowerInvariant() && !string.IsNullOrEmpty(ticket.TransDesc);
     }
 }

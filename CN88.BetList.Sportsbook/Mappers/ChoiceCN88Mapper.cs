@@ -212,6 +212,22 @@
 
             MapIdToBaseId(SportsbookBetTypeIdConstant._2HCorrectCorners, SportsbookBetTypeIdConstant._1HCorrectCorners);
             MapIdToBaseId(SportsbookBetTypeIdConstant.CornerHighestScoringHalf2Way, SportsbookBetTypeIdConstant.HighestScoringHalf2Way);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant.ExtraTimeOddEven, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.ExtraTimeCorrectScore, SportsbookBetTypeIdConstant.CorrectScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.ExtraTimeDoubleChance, SportsbookBetTypeIdConstant.DoubleChance);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.ExtraTimeNextGoal, SportsbookBetTypeIdConstant.NextGoal);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutOddEvenFinal, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutOddEvenFirst10, SportsbookBetTypeIdConstant.FirstHalfHomeTeamOddEven);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutSuddenDeath, SportsbookBetTypeIdConstant._1HBothTeamsToScoreOwn);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomePenaltyShootoutOverUnderFinal, SportsbookBetTypeIdConstant.HomeTeamOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayPenaltyShootoutOverUnderFinal, SportsbookBetTypeIdConstant.HomeTeamOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.HomePenaltyShootoutOverUnderFirst10, SportsbookBetTypeIdConstant.HomeTeamOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayPenaltyShootoutOverUnderFirst10, SportsbookBetTypeIdConstant.HomeTeamOverUnder);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.AwayPenaltyShootoutRoundX, SportsbookBetTypeIdConstant.HomePenaltyShootoutRoundX);
+
+            MapIdToBaseId(SportsbookBetTypeIdConstant.PenaltyShootoutBothOneNeitherRoundX, SportsbookBetTypeIdConstant.BothOneNeitherTeamToScore);
+            MapIdToBaseId(SportsbookBetTypeIdConstant.ExtraTimeNextGoalMethod, SportsbookBetTypeIdConstant.FirstGoalMethod);
         }
 
         private void MapForBadminton()

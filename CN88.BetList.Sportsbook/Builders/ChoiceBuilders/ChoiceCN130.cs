@@ -16,7 +16,7 @@
         {
             var betteam = string.Empty;
 
-            switch (ticket.BetTeam)
+            switch (ticket.BetTeam?.ToLowerInvariant())
             {
                 case "0":
                     betteam = CoreBetList.NoGoals;

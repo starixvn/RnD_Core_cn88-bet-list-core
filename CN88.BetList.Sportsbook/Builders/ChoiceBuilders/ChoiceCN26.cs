@@ -13,7 +13,7 @@
         {
             var betTeam = string.Empty;
 
-            switch (ticket.BetTeam)
+            switch (ticket.BetTeam?.ToLowerInvariant().ToLowerInvariant())
             {
                 case BetTeamValue.B:
                     betTeam = CoreBetList.lblBoth;

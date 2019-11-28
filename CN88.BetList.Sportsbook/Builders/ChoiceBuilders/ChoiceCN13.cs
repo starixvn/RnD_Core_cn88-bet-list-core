@@ -11,8 +11,8 @@
     {
         protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
         {
-            string team = ticket.BetTeam != null && ticket.BetTeam.Contains(BetTeamValue.H) ? Template.Match.homeTeam : Template.Match.awayTeam;
-            string yesNo = ticket.BetTeam != null && ticket.BetTeam.Contains(BetTeamValue.Y) ? CoreBetList.lblYes : CoreBetList.lblNo;
+            string team = ticket.BetTeam != null && ticket.BetTeam.ToLowerInvariant().Contains(BetTeamValue.H) ? Template.Match.homeTeam : Template.Match.awayTeam;
+            string yesNo = ticket.BetTeam != null && ticket.BetTeam.ToLowerInvariant().Contains(BetTeamValue.Y) ? CoreBetList.lblYes : CoreBetList.lblNo;
 
             Template.BetChoice.ChoiceName.choiceName = string.Join(null, new[] { team, " ", yesNo.ToUpperInvariant() });
         }
