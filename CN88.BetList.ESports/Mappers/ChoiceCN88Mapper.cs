@@ -79,6 +79,7 @@
         {
             var handicapBasedBetTypes = new[]
             {
+                9002,
                 9008,
                 9012,
                 9018,
