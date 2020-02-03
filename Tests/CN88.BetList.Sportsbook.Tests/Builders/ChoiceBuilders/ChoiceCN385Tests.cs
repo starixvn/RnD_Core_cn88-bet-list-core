@@ -14,8 +14,8 @@
             Assert.AreEqual("BaseChoiceCN88", typeof(ChoiceCN385).BaseType.Name);
         }
 
-        [TestCase("1", "Home")]
-        [TestCase("2", "Away")]
+        [TestCase("1", "Home name")]
+        [TestCase("2", "Away name")]
         [TestCase("x", "Draw")]
         [TestCase("X", "Draw")]
         [TestCase("", "")]
@@ -25,6 +25,7 @@
             var ticket = Substitute.For<ITicket>();
             ticket.BetTeam = betTeam;
             var ticketHelper = Substitute.For<ITicketHelper>();
+            ticketHelper.GetTeamNameById(Arg.Any<long>()).Returns(expectedText);
             var choice = new ChoiceCN385();
 
             // Act
