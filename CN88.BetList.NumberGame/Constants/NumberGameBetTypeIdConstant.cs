@@ -12,6 +12,7 @@
         public const int Warrior = 88;
         public const int NextCombo = 89;
         public const int NumberWheel = 90;
+        public const int NextRB = 91;
         public const int BigSmall_Happy5 = 8101;
         public const int OddEven_Happy5 = 8102;
         public const int _4Seasons_Happy5 = 8103;

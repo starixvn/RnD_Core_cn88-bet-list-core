@@ -24,6 +24,7 @@
             MapIdToBaseId(NumberGameBetTypeIdConstant._4Seasons_Happy5, NumberGameBetTypeIdConstant._1stBallOU);
             MapIdToBaseId(NumberGameBetTypeIdConstant.MoreOddMoreEven_Happy5, NumberGameBetTypeIdConstant._1stBallOU);
             MapIdToBaseId(NumberGameBetTypeIdConstant.Combo_Happy5, NumberGameBetTypeIdConstant._1stBallOU);
+            MapIdToBaseId(NumberGameBetTypeIdConstant.NextRB, NumberGameBetTypeIdConstant._1stBallOU);
 
             MapIdToBaseId(NumberGameBetTypeIdConstant.OddEven, NumberGameBetTypeIdConstant.OverUnder);
         }

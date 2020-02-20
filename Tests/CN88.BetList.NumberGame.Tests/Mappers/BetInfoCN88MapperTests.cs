@@ -7,6 +7,7 @@
     public class BetInfoCN88MapperTests
     {
         [TestCase(NumberGameBetTypeIdConstant.LastBallOU, NumberGameBetTypeIdConstant._1stBallOU)]
+        [TestCase(NumberGameBetTypeIdConstant.NextRB, NumberGameBetTypeIdConstant._1stBallOU)]
         public void Init_Always_MapCorrectIdToId(int sourceId, int expectedTargetId)
         {
             // Act.

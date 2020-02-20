@@ -35,6 +35,17 @@
         public ActionResult Index()
             => View();
 
+        public ActionResult NumberGame(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/NumberGame.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
+
         public ActionResult Sportsbook(BetListData model = null)
         {
             var betTypes = dataService.QueryBetTypes();

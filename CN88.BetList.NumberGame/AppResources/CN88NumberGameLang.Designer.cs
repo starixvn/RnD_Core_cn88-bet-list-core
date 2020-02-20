@@ -61,6 +61,15 @@ namespace CN88.BetList.Core.AppResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Blue.
+        /// </summary>
+        internal static string Blue {
+            get {
+                return ResourceManager.GetString("Blue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High.
         /// </summary>
         internal static string high {
@@ -138,6 +147,15 @@ namespace CN88.BetList.Core.AppResources {
         internal static string numbergameno {
             get {
                 return ResourceManager.GetString("numbergameno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red.
+        /// </summary>
+        internal static string Red {
+            get {
+                return ResourceManager.GetString("Red", resourceCulture);
             }
         }
         
