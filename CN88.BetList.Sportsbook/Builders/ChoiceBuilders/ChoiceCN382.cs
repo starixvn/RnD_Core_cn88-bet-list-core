@@ -9,7 +9,7 @@
         protected override void BuildChoiceName(ITicket ticket, ITicketHelper ticketHelper)
         {
             Template.BetChoice.ChoiceName.choiceName =
-                ticket.BetTeam.ToLowerInvariant() == BetTeamValue.S ? CoreBetList.Score : CoreBetList.Miss;
+                ticket.BetTeam.ToLowerInvariant() == BetTeamValue.S ? CoreBetList.Goal : CoreBetList.Miss;
         }
     }
 }

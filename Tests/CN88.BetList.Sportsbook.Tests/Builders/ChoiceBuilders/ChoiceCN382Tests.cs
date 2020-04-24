@@ -14,8 +14,8 @@
             Assert.AreEqual("BaseChoiceCN88", typeof(ChoiceCN382).BaseType.Name);
         }
 
-        [TestCase("s", "Score")]
-        [TestCase("S", "Score")]
+        [TestCase("s", "Goal")]
+        [TestCase("S", "Goal")]
         [TestCase("m", "Miss")]
         [TestCase("M", "Miss")]
         [TestCase("", "Miss")]
