@@ -225,5 +225,16 @@
 
             return View(model);
         }
+
+        public ActionResult PHAIO51(BetListData model = null)
+        {
+            var betTypes = dataService.QueryBetTypes();
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/PHAIO51.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View(model);
+        }
     }
 }

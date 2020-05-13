@@ -112,6 +112,7 @@
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN26.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN28.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN382.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN376.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN385.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN392.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN391.cs" />
