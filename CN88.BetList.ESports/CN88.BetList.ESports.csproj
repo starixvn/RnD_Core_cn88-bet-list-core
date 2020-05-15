@@ -40,10 +40,10 @@
       <HintPath>..\packages\CN88.BetList.Sportsbook.1.0.1-ph506\lib\net461\CN88.BetList.Sportsbook.dll</HintPath>
     </Reference>
     <Reference Include="Fanex.BetList.BetTrade, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.2.109.0-ScoreToGoal-04\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
+      <HintPath>..\packages\Fanex.BetList.Core.2.110.7\lib\net40\Fanex.BetList.BetTrade.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.BetList.Core, Version=2.109.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fanex.BetList.Core.2.109.0-ScoreToGoal-04\lib\net40\Fanex.BetList.Core.dll</HintPath>
+    <Reference Include="Fanex.BetList.Core, Version=2.110.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fanex.BetList.Core.2.110.7\lib\net40\Fanex.BetList.Core.dll</HintPath>
     </Reference>
     <Reference Include="IBCFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fanex.File.1.0.0\lib\net40\IBCFile.dll</HintPath>
@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\BetInfoBuilders\BetInfoCN9001.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN9088.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN9003.cs" />
+    <Compile Include="Builders\ChoiceBuilders\ChoiceCN9087.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN9005.cs" />
     <Compile Include="Builders\ChoiceBuilders\ChoiceCN9073.cs" />
     <Compile Include="Constants\ESportsBetTypeIdConstant.cs" />

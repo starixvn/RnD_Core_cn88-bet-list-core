@@ -66,5 +66,8 @@
         public const int MapXRoundsHandicap = 9059;
         public const int MapXClutchesHandicap = 9076;
         public const int MapXRoundYTotalKillsHandicap = 9077;
+
+        public const int MapXOvertime = 9087;
+        public const int CorrectMapScore = 9088;
     }
 }
