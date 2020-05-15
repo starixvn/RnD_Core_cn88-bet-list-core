@@ -35,6 +35,17 @@
         public ActionResult Index()
             => View();
 
+        public ActionResult Esports3(BetListData model = null)
+        {
+            var betTypes = new List<BetType> { new BetType { Id = 9087, Name = "Map X Overtime" } };
+            ViewBag.BetTypes = CreateSelectListItem(betTypes);
+            DataSourcePath = "~/App_Data/CN88/Esports.xls";
+            model = GetDataSource(model, sourcePath: DataSourcePath);
+            model.DataFilePath = DataSourcePath;
+
+            return View("~/Views/BetListCN88/Sportsbook.cshtml", model);
+        }
+
         public ActionResult Sportsbook(BetListData model = null)
         {
             var betTypes = dataService.QueryBetTypes();

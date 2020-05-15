@@ -66,7 +66,9 @@
                 ESportsBetTypeIdConstant.MapX16thRound,
                 ESportsBetTypeIdConstant.MapXRoundYMoneyline,
                 ESportsBetTypeIdConstant.MapXRoundYTotalKillsMoneyline,
-                ESportsBetTypeIdConstant.MapXRoundYFirstKill
+                ESportsBetTypeIdConstant.MapXRoundYFirstKill,
+                ESportsBetTypeIdConstant.MapXOvertime,
+                ESportsBetTypeIdConstant.CorrectMapScore
             };
 
             foreach (var betTypeId in moneylineBasedBetTypes)
