@@ -13,11 +13,12 @@
 
     public class BaseChoiceCN88 : IChoiceCN88
     {
-        private readonly int[] liveScoreSports = { 1, 4, 8, 26, 28, 49, 51 };
+        private readonly int[] liveScoreSports = { 1, 4, 26, 28, 49, 51 };
         private const string ESportsXmlTag = "p16";
         private const string InPlayXmlAttribute = "in";
         private const int ESportsSportType = 43;
         private const int FootballSportType = 3;
+        private const int baseballSportType = 8;
         private const string ExcelNewLine = "\n";
         private const string Space = " ";
         private const string VsText = " vs ";
@@ -93,7 +94,8 @@
 
             if (IsShowLiveText(ticket.SportTypeId))
             {
-                if (ticket.SportTypeId == ESportsSportType || ticket.SportTypeId == FootballSportType)
+                var sportTypeLiveScore = new List<int> { ESportsSportType, FootballSportType, baseballSportType };
+                if (sportTypeLiveScore.Contains(ticket.SportTypeId))
                 {
                     var scoreStatus = GetScoreStatus(ticket);
 
